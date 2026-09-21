@@ -1,2 +1,2 @@
 # ecommerce-project
-A car shopping website
+Ecommerce website
