@@ -1,61 +1,102 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ShopNow — Home</title>
-  <link rel="stylesheet" href="css/style.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ShopNow — Products</title>
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
+
+
 <body>
-  <header class="site-header">
-    <h1 class="logo">ShopNow</h1>
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
- 
-  <section class="hero">
-    <h2>Everyday tech, honest prices.</h2>
-  </section>
 
-    <input
-        type="text"
-        id="search-box"
-        placeholder="Search products...">
 
- 
- 
-  
-  <section class="product-grid" id="featured-products"></section>
- 
-  <footer class="site-footer"><p>&copy; 2025 ShopNow.</p></footer>
-  <script src="js/app.js"></script>
+<header class="site-header">
 
-  <button class="category-btn" data-category="All">All</button>
-<button class="category-btn" data-category="Computers">
-    Computers
-</button>
+<h1 class="logo">ShopNow</h1>
 
-<button class="category-btn" data-category="Accessories">
-    Accessories
-</button>
+
+<nav class="main-nav">
+
+<a href="index.html">Home</a>
+
+<a href="products.html">Products</a>
+
+<a href="about.html">About</a>
+
+</nav>
+
+</header>
+
+
+<main>
+
+
+<section class="products-header">
+
+<h2>Our Products</h2>
+
+<p>Find the technology you need at honest prices.</p>
+
+</section>
+
+<input
+
+type="text"
+
+id="search-box"
+
+placeholder="Search products...">
+
+
+<div class="category-buttons">
+
+<button class="category-btn" data-category="All">All</button>
+
+<button class="category-btn" data-category="Consoles">Consoles</button>
+
+<button class="category-btn" data-category="PCs & Laptops">PCs & Laptops</button>
+
+<button class="category-btn" data-category="Displays">Displays</button>
+
+<button class="category-btn" data-category="Peripherals">Peripherals</button>
+
+<button class="category-btn" data-category="Audio">Audio</button>
+
+<button class="category-btn" data-category="Furniture">Furniture</button>
+
+<button class="category-btn" data-category="Streaming">Streaming</button>
+
+</div>
+
 
 <select id="sort-select">
-    <option value="default">
-        Sort by Price
-    </option>
 
-    <option value="low-high">
-        Price : Low to High
-    </option>
+<option value="default">Sort Products</option>
 
-    <option value="high-low">
-        Price: High to Low
-    </option>
+<option value="low-high">Price: Low to High</option>
+
+<option value="high-low">Price: High to Low</option>
 
 </select>
 
+
+<section class="product-grid" id="product-list"></section>
+
+<script src="js/app.js"></script>
+
+<footer class="site-footer">
+
+<p>&copy; 2025 ShopNow.</p>
+
+</footer>
 </body>
+
 </html>
